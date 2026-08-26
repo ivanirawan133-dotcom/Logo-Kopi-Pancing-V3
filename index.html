@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brosur Kaos Kopi Pancing</title>
+    <style>
+        :root {
+            --bg-color: #060913;
+            --card-bg: #0b111e;
+            --cyan: #00ffff;
+            --pink: #ff007f;
+            --success: #00ff88;
+            --text-main: #e2e8f0;
+            --text-muted: #7085a3;
+            --border: #1b273d;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .brochure-card {
+            width: 100%;
+            max-width: 500px;
+            background: var(--card-bg);
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 35px rgba(0, 255, 255, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        .brochure-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--pink), var(--cyan), var(--success));
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 1px dashed var(--border);
+            padding-bottom: 20px;
+        }
+        .logo-img-container {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 15px auto;
+            border-radius: 50%;
+            border: 3px solid var(--cyan);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+            overflow: hidden;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .badge {
+            background: rgba(255, 0, 127, 0.15);
+            color: var(--pink);
+            border: 1px solid rgba(255, 0, 127, 0.3);
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 20px;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .tagline {
+            color: var(--cyan);
+            font-style: italic;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .desc {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+        .section-title {
+            color: var(--success);
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th {
+            background-color: #131e31;
+            color: var(--cyan);
+            padding: 10px;
+            font-size: 10px;
+            text-align: left;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--border);
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #101826;
+            font-size: 12px;
+        }
+        .size-col {
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .price-col {
+            color: var(--success);
+            font-weight: bold;
+            text-align: right;
+        }
+        .promo-box {
+            background: linear-gradient(135deg, #131e31, #0f172a);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .promo-box h4 {
+            color: var(--cyan);
+            margin: 0 0 5px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .promo-box p {
+            margin: 0;
+            font-size: 10px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+        .footer {
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+            font-size: 10px;
+            color: var(--text-muted);
+        }
+        .footer strong {
+            color: #ffffff;
+        }
+        .pirt-info {
+            font-size: 9px;
+            color: var(--text-muted);
+            margin-top: 8px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="brochure-card">
+    
+    <div class="header">
+        <!-- FOTO LOGO ASLI DARI GITHUB -->
+        <div class="logo-img-container">
+            <img src="logo.jpeg" alt="Logo Kopi Pancing">
+        </div>
+        
+        <div class="badge">Official Merchandise</div>
+        <h1>Koleksi Eksklusif T-Shirt</h1>
+        <div class="tagline">"Seruput Kopinya, Strike Babonnya!"</div>
+        <div class="desc">
+            Nikmati kenyamanan dan gaya dengan kaos resmi Kopi Pancing. Dibuat dari bahan berkualitas tinggi, kaos ini dirancang untuk memberikan pengalaman terbaik bagi para penggemar kopi dan komunitas kami. Tersedia dalam berbagai ukuran. Pesan sekarang juga !!
+        </div>
+    </div>
+
+    <div class="section-title">📋 Daftar Harga Resmi & Ukuran</div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Ukuran Kaos</th>
+                <th>Kenyamanan Bahan</th>
+                <th style="text-align: right;">Harga Resmi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="size-col">XS</td>
+                <td style="color: var(--text-muted); font-size: 10px;">Regular Fit</td>
+                <td class="price-col">Rp 95.400</td>
+            </tr>
+            <tr>
+                <td class="size-col">S</td>
+                <td style="color: var(--text-muted); font-size: 10px;">Regular Fit</td>
+                <td class="price-col">Rp 104.100</td>
+            </tr>
+            <tr>
+                <td class="size-col">M</td>
+                <td style="color: var(--text-muted); font-size: 10px;">Regular Fit</td>
+                <td class="price-col">Rp 107.400</td>
+            </tr>
+            <tr>
+                <td class="size-col">L</td>
+                <td style="color: var(--text-muted); font-size: 10px;">Regular Fit</td>
+                <td class="price-col">Rp 114.160</td>
+            </tr>
+            <tr>
+                <td class="size-col">XL</td>
+                <td style="color: var(--text-muted); font-size: 10px;">Regular Fit</td>
+                <td class="price-col">Rp 119.500</td>
+            </tr>
+            <tr>
+                <td class="size-col">XXL</td>
+                <td style="color: var(--text-muted); font-size: 10px;">Regular Fit</td>
+                <td class="price-col">Rp 120.100</td>
+            </tr>
+            <tr>
+                <td class="size-col">XXXL</td>
+                <td style="color: var(--text-muted); font-size: 10px;">Regular Fit</td>
+                <td class="price-col">Rp 128.200</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="promo-box">
+        <h4>🎁 Bonus & Doorprize Spesial!</h4>
+        <p>Setiap pembelian kaos resmi Kopi Pancing berkesempatan mendapatkan bonus menarik dan doorprize spesial. Jangan lewatkan kesempatan ini untuk menambah koleksi eksklusif Anda!</p>
+    </div>
+
+    <div class="footer">
+        <p>📍 <strong>Basecamp:</strong> Kopi Pancing - Telaga Bestari (EST. 2026)<br>
+        📞 <strong>Pemesanan:</strong> 085778934725 / Scan QR pada kemasan resmi<br>
+        <span class="pirt-info">PIRT: 2083603012391-31 | Diproduksi oleh Kopi Pancing - Telaga Bestari</span></p>
+        <span style="color: var(--cyan); font-weight: bold; display: block; margin-top: 8px;">Seruput Kopinya, Strike Babonnya!</span>
+    </div>
+
+</div>
+
+</body>
+</html>
