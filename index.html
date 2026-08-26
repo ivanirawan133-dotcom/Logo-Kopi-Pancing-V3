@@ -28,11 +28,11 @@
         }
         .brochure-card {
             width: 100%;
-            max-width: 500px;
+            max-width: 520px;
             background: var(--card-bg);
             border: 2px solid rgba(0, 255, 255, 0.3);
             border-radius: 20px;
-            padding: 30px;
+            padding: 25px;
             box-shadow: 0 0 35px rgba(0, 255, 255, 0.15);
             position: relative;
             overflow: hidden;
@@ -48,13 +48,13 @@
         }
         .header {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             border-bottom: 1px dashed var(--border);
-            padding-bottom: 20px;
+            padding-bottom: 15px;
         }
         .logo-img-container {
-            width: 140px;
-            height: 140px;
+            width: 130px;
+            height: 130px;
             margin: 0 auto 15px auto;
             border-radius: 50%;
             border: 3px solid var(--cyan);
@@ -81,11 +81,11 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             display: inline-block;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         h1 {
             color: #ffffff;
-            font-size: 20px;
+            font-size: 19px;
             margin: 5px 0;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -93,14 +93,14 @@
         .tagline {
             color: var(--cyan);
             font-style: italic;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: bold;
             margin-top: 5px;
         }
         .desc {
             font-size: 11px;
             color: var(--text-muted);
-            margin-top: 10px;
+            margin-top: 8px;
             line-height: 1.4;
         }
         .section-title {
@@ -114,21 +114,26 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         th {
             background-color: #131e31;
             color: var(--cyan);
-            padding: 10px;
+            padding: 9px 6px;
             font-size: 10px;
-            text-align: left;
+            text-align: center;
             text-transform: uppercase;
             border-bottom: 2px solid var(--border);
         }
+        th:first-child, td:first-child {
+            text-align: left;
+            padding-left: 10px;
+        }
         td {
-            padding: 10px;
+            padding: 9px 6px;
             border-bottom: 1px solid #101826;
-            font-size: 12px;
+            font-size: 11px;
+            text-align: center;
         }
         .size-col {
             font-weight: bold;
@@ -137,20 +142,20 @@
         .price-col {
             color: var(--success);
             font-weight: bold;
-            text-align: right;
+            font-size: 11px;
         }
         .promo-box {
             background: linear-gradient(135deg, #131e31, #0f172a);
             border: 1px solid rgba(0, 255, 255, 0.2);
             border-radius: 12px;
-            padding: 15px;
+            padding: 12px;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .promo-box h4 {
             color: var(--cyan);
-            margin: 0 0 5px 0;
-            font-size: 12px;
+            margin: 0 0 4px 0;
+            font-size: 11px;
             text-transform: uppercase;
         }
         .promo-box p {
@@ -162,7 +167,7 @@
         .footer {
             text-align: center;
             border-top: 1px solid var(--border);
-            padding-top: 15px;
+            padding-top: 12px;
             font-size: 10px;
             color: var(--text-muted);
         }
@@ -172,7 +177,7 @@
         .pirt-info {
             font-size: 9px;
             color: var(--text-muted);
-            margin-top: 8px;
+            margin-top: 6px;
             letter-spacing: 0.5px;
         }
     </style>
@@ -194,65 +199,67 @@
         </div>
     </div>
 
-    <div class="section-title">📋 Daftar Harga & Ukuran Dada</div>
+    <div class="section-title">📋 Detail Ukuran & Harga Resmi</div>
     
     <table>
         <thead>
             <tr>
-                <th>Ukuran Kaos</th>
-                <th>Lebar Dada (LD)</th>
-                <th style="text-align: right;">Harga Resmi</th>
+                <th>Ukuran</th>
+                <th>Lebar</th>
+                <th>Panjang</th>
+                <th>Lingkar</th>
+                <th style="text-align: right; padding-right: 10px;">Harga</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="size-col">XS</td>
-                <td style="color: var(--text-muted); font-size: 11px;">44 cm</td>
-                <td class="price-col">Rp 95.400</td>
-            </tr>
-            <tr>
-                <td class="size-col">S</td>
-                <td style="color: var(--text-muted); font-size: 11px;">46 cm</td>
-                <td class="price-col">Rp 104.100</td>
+                <td class="size-col">XS (Anak 5 Thn)</td>
+                <td>32 cm</td>
+                <td>42 cm</td>
+                <td>64 cm</td>
+                <td class="price-col" style="text-align: right; padding-right: 10px;">Rp 95.400</td>
             </tr>
             <tr>
                 <td class="size-col">M</td>
-                <td style="color: var(--text-muted); font-size: 11px;">48 cm</td>
-                <td class="price-col">Rp 107.400</td>
+                <td>47 cm</td>
+                <td>66 cm</td>
+                <td>94 cm</td>
+                <td class="price-col" style="text-align: right; padding-right: 10px;">Rp 107.400</td>
             </tr>
             <tr>
                 <td class="size-col">L</td>
-                <td style="color: var(--text-muted); font-size: 11px;">50 cm</td>
-                <td class="price-col">Rp 114.160</td>
+                <td>52 cm</td>
+                <td>70 cm</td>
+                <td>104 cm</td>
+                <td class="price-col" style="text-align: right; padding-right: 10px;">Rp 114.160</td>
             </tr>
             <tr>
                 <td class="size-col">XL</td>
-                <td style="color: var(--text-muted); font-size: 11px;">52 cm</td>
-                <td class="price-col">Rp 119.500</td>
+                <td>54 cm</td>
+                <td>72 cm</td>
+                <td>108 cm</td>
+                <td class="price-col" style="text-align: right; padding-right: 10px;">Rp 119.500</td>
             </tr>
             <tr>
                 <td class="size-col">XXL</td>
-                <td style="color: var(--text-muted); font-size: 11px;">54 cm</td>
-                <td class="price-col">Rp 120.100</td>
-            </tr>
-            <tr>
-                <td class="size-col">XXXL</td>
-                <td style="color: var(--text-muted); font-size: 11px;">56 cm</td>
-                <td class="price-col">Rp 128.200</td>
+                <td>57 cm</td>
+                <td>77 cm</td>
+                <td>114 cm</td>
+                <td class="price-col" style="text-align: right; padding-right: 10px;">Rp 120.100</td>
             </tr>
         </tbody>
     </table>
 
     <div class="promo-box">
         <h4>🎁 Bonus & Doorprize Spesial!</h4>
-        <p>Setiap pembelian kaos resmi Kopi Pancing berkesempatan mendapatkan bonus menarik dan doorprize spesial. Jangan lewatkan kesempatan ini untuk menambah koleksi eksklusif Anda!</p>
+        <p>Setiap pembelian kaos resmi Kopi Pancing berkesempatan mendapatkan bonus menarik dan doorprize spesial. Jangan lewatkan kesempatan ini!</p>
     </div>
 
     <div class="footer">
         <p>📍 <strong>Basecamp:</strong> Kopi Pancing - Telaga Bestari (EST. 2026)<br>
         📞 <strong>Pemesanan:</strong> 085778934725 / Scan QR pada kemasan resmi<br>
         <span class="pirt-info">PIRT: 2083603012391-31 | Diproduksi oleh Kopi Pancing - Telaga Bestari</span></p>
-        <span style="color: var(--cyan); font-weight: bold; display: block; margin-top: 8px;">Seruput Kopinya, Strike Babonnya!</span>
+        <span style="color: var(--cyan); font-weight: bold; display: block; margin-top: 6px;">Seruput Kopinya, Strike Babonnya!</span>
     </div>
 
 </div>
